@@ -1,11 +1,99 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+
+# Only exists if Bazel was run
+/bazel-out
+
+# storybook
+storybook-static
+
+# DSM
+.dsm
+
+.repository
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+
+# misc
+/.angular/cache
+/.sass-cache
+/connect.lock
+**/coverage
+**/.nyc_output
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+/.deploy/__ngcc*
+
+
+# compiled output
+**/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+**/**/node_modules/
+
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+
+####### common ignores below #######
+
+# IDE - VSCode
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+
+# IDEs and editors
 .idea/
 *.iml
 *.iws
-*.eml
-out/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+
+# System Files
 .DS_Store
-.svn
-log/*.log
-tmp/**
-node_modules/
-.sass-cache
+Thumbs.db
+
+# Numerous always-ignore extensions
+*.diff
+*.bak
+*.tmp
+*.moved
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+.npmrc
+target
+.scannerwork/
+work/
+
+# Ctags
+tags
+.tags
+
